@@ -25,3 +25,5 @@ yarn-error.log*
 .env
 .history/
 .npm-cache
+
+.idea
