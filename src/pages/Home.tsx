@@ -1,4 +1,3 @@
-
 const Home: React.FunctionComponent = (props) => {
     return (
         <div>

@@ -5,12 +5,12 @@ import Page from 'components/Page';
 import Sections from 'components/Sections';
 
 const Home: React.FunctionComponent = () => {
-  return (
-    <Page>
-      <Banner />
-      <Sections />
-    </Page>
-  );
+    return (
+        <Page>
+            <Banner/>
+            <Sections/>
+        </Page>
+    );
 };
 
 export default Home;

@@ -1,6 +1,6 @@
-import { BrowserRouter } from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 
-import { CssBaseline, MuiThemeProvider } from '@material-ui/core';
+import {CssBaseline, MuiThemeProvider} from '@material-ui/core';
 
 import DialogSearchProvider from 'components/DialogSearch/DialogSearchProvider';
 import Footer from 'components/Footer';
@@ -18,9 +18,9 @@ function Main() {
     return (
         <BrowserRouter>
             <DialogSearchProvider>
-                <Navbar />
-                <AppRouter />
-                {isSmallWindow && <Footer />}
+                <Navbar/>
+                <AppRouter/>
+                {isSmallWindow && <Footer/>}
             </DialogSearchProvider>
         </BrowserRouter>
     );
@@ -29,8 +29,8 @@ function Main() {
 function App() {
     return (
         <MuiThemeProvider theme={theme}>
-            <CssBaseline />
-            <Main />
+            <CssBaseline/>
+            <Main/>
         </MuiThemeProvider>
     );
 }

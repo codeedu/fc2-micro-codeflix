@@ -1,10 +1,10 @@
-import { useMediaQuery, useTheme } from '@material-ui/core';
+import {useMediaQuery, useTheme} from '@material-ui/core';
 
 const useIsSmallWindow = () => {
-  const theme = useTheme();
-  const mobileWidth = theme.breakpoints.values.mobile;
+    const theme = useTheme();
+    const mobileWidth = theme.breakpoints.values.mobile;
 
-  return useMediaQuery(theme.breakpoints.down(mobileWidth));
+    return useMediaQuery(theme.breakpoints.down(mobileWidth));
 };
 
 export default useIsSmallWindow;

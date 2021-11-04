@@ -1,25 +1,25 @@
 import React from 'react';
 
 import {
-  BottomNavigationAction,
-  BottomNavigationActionProps,
-  makeStyles,
+    BottomNavigationAction,
+    BottomNavigationActionProps,
+    makeStyles,
 } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
-  root: {
-    fontWeight: 600,
-    paddingBottom: 0,
-    paddingTop: 0,
-  },
+    root: {
+        fontWeight: 600,
+        paddingBottom: 0,
+        paddingTop: 0,
+    },
 }));
 
 export type FooterItemProps = BottomNavigationActionProps;
 
 const FooterItem: React.FunctionComponent<FooterItemProps> = (props) => {
-  const classes = useStyles();
+    const classes = useStyles();
 
-  return <BottomNavigationAction className={classes.root} {...props} />;
+    return <BottomNavigationAction className={classes.root} {...props} />;
 };
 
 export default FooterItem;
