@@ -1,7 +1,9 @@
-import { Switch, Route } from "react-router-dom";
-import routes from "./index";
+import { FunctionComponent } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-const AppRouter: React.FunctionComponent = () => {
+import routes from './index';
+
+const AppRouter: FunctionComponent = () => {
   return (
     <Switch>
       {routes.map((route, key) => {
