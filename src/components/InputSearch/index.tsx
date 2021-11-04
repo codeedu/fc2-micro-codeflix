@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {
+    alpha,
     Divider,
-    fade,
     IconButton,
     InputBase,
     makeStyles,
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         borderRadius: theme.shape.borderRadius,
-        backgroundColor: fade(theme.palette.common.white, 0.25),
+        backgroundColor: alpha(theme.palette.common.white, 0.25),
         width: '100%',
         marginLeft: theme.spacing(1),
         height: '40px',

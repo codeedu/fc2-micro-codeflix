@@ -1,7 +1,7 @@
 import React from 'react';
 import {CustomArrowProps} from 'react-slick';
 
-import {fade, makeStyles} from '@material-ui/core';
+import {alpha, makeStyles} from '@material-ui/core';
 import clsx from 'clsx';
 
 import SliderArrowUnstyled from 'components/Slider/SliderArrowUnstyled';
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     iconButtonRoot: {
         borderRadius: 0,
         '&:hover': {
-            backgroundColor: fade(theme.palette.background.default, 0.35),
+            backgroundColor: alpha(theme.palette.background.default, 0.35),
         },
     },
     arrow: {

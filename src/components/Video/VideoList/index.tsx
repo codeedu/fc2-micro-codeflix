@@ -34,7 +34,7 @@ const VideoList: React.FunctionComponent<VideoListProps> = (props) => {
     const thumbnail = isDown1200 ? bannerThumbnail : banner;
 
     return (
-        <Grid className={classes.root} container justify="center">
+        <Grid className={classes.root} container justifyContent="center">
             {range(1, 5).map((video) => (
                 <Link key={video} to={`/videos/${video}/details`}>
                     <VideoThumbnail ImgProps={{src: thumbnail}}/>

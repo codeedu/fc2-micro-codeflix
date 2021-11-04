@@ -43,7 +43,7 @@ const Navbar: React.FunctionComponent = () => {
                         <Logo/>
                         {!isSmallWindow && (
                             <>
-                                <Grid container justify="center">
+                                <Grid container justifyContent="center">
                                     <Grid item xs={8} lg={7}>
                                         <InputSearch/>
                                     </Grid>
@@ -53,7 +53,7 @@ const Navbar: React.FunctionComponent = () => {
                             </>
                         )}
                         {isSmallWindow && (
-                            <Grid container justify="flex-end">
+                            <Grid container justifyContent="flex-end">
                                 <IconButton onClick={handleOpen}>
                                     <SearchIcon/>
                                 </IconButton>
