@@ -3,9 +3,9 @@ import React from 'react';
 import {Grid} from '@material-ui/core';
 
 import MenuGenres from 'components/Menus/MenuGenres';
-import Page from 'components/Page';
 import Title from 'components/Title';
 import VideoList from 'components/Video/VideoList';
+import Page from "../../components/Page";
 
 const VideosByCategory: React.FunctionComponent = () => {
     return (

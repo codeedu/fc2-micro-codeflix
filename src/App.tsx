@@ -2,15 +2,12 @@ import {BrowserRouter} from 'react-router-dom';
 
 import {CssBaseline, MuiThemeProvider} from '@material-ui/core';
 
-import DialogSearchProvider from 'components/DialogSearch/DialogSearchProvider';
-import Footer from 'components/Footer';
-import Navbar from 'components/Navbar';
-
-import useIsSmallWindow from 'hooks/useIsSmallWindow';
-
-import AppRouter from 'routes/AppRouter';
-
 import theme from './theme';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import useIsSmallWindow from "./hooks/useIsSmallWindow";
+import DialogSearchProvider from "./components/DialogSearch/DialogSearchProvider";
+import AppRouter from "./routes/AppRouter";
 
 function Main() {
     const isSmallWindow = useIsSmallWindow();

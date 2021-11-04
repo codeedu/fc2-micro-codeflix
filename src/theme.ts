@@ -1,4 +1,4 @@
-import {createMuiTheme, Theme} from '@material-ui/core';
+import {createTheme, Theme} from '@material-ui/core';
 import {red} from '@material-ui/core/colors';
 import {PaletteOptions} from '@material-ui/core/styles/createPalette';
 
@@ -21,7 +21,7 @@ const palette: PaletteOptions = {
     },
 };
 
-const theme = createMuiTheme({
+const theme = createTheme({
     palette,
     breakpoints: {
         values: {
