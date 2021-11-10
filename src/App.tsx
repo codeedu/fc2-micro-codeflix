@@ -9,15 +9,16 @@ import useIsSmallWindow from "./hooks/useIsSmallWindow";
 import DialogSearchProvider from "./components/DialogSearch/DialogSearchProvider";
 import AppRouter from "./routes/AppRouter";
 
+
 function Main() {
     const isSmallWindow = useIsSmallWindow();
 
     return (
         <BrowserRouter>
             <DialogSearchProvider>
-                <Navbar/>
-                <AppRouter/>
-                {isSmallWindow && <Footer/>}
+                <Navbar />
+                <AppRouter />
+                {isSmallWindow && <Footer />}
             </DialogSearchProvider>
         </BrowserRouter>
     );
@@ -26,8 +27,8 @@ function Main() {
 function App() {
     return (
         <MuiThemeProvider theme={theme}>
-            <CssBaseline/>
-            <Main/>
+            <CssBaseline />
+            <Main />
         </MuiThemeProvider>
     );
 }

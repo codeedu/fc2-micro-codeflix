@@ -53,7 +53,6 @@ const DialogSearchProvider: React.FunctionComponent<DialogSearchProviderProps> =
                 if (action === 'POP') {
                     const {show_dialog_search} = location.state || {};
                     show_dialog_search ? actions.show() : actions.hide();
-                    console.log('POP', show_dialog_search);
                 }
             });
 

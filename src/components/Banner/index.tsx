@@ -147,7 +147,13 @@ const Banner: React.FunctionComponent = () => {
                     onClick={handleClick}
                 />
             </div>
-            <Rating rating="L"/>
+        </>
+    );
+};
+
+export default Banner;
+/*
+<Rating rating="L"/>
             <Rating rating="10"/>
             <Rating rating="14"/>
             <Rating rating="16"/>
@@ -156,8 +162,4 @@ const Banner: React.FunctionComponent = () => {
             <Category>Documentaries</Category>
             <VideoLink>Details</VideoLink>
             <VideoTitle>The Matrix</VideoTitle>
-        </>
-    );
-};
-
-export default Banner;
+ */

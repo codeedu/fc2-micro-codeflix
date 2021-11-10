@@ -1,6 +1,6 @@
 import {RouteProps} from 'react-router-dom';
-import Home from "../pages/Home";
 import VideosByCategory from "../pages/VideosByCategory";
+import Home from "../pages/Home";
 
 export interface MyRouteProps extends RouteProps {
     name: string;
